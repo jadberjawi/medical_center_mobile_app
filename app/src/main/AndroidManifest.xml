@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.final_project">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Final_Project">
+        <activity
+            android:name=".reservations"
+            android:exported="false" />
+        <activity
+            android:name=".userinfo"
+            android:exported="false" />
+        <activity
+            android:name=".echo"
+            android:exported="false" />
+        <activity
+            android:name=".lipid"
+            android:exported="false" />
+        <activity
+            android:name=".fc"
+            android:exported="false" />
+        <activity
+            android:name=".mammo"
+            android:exported="false" />
+        <activity
+            android:name=".bt"
+            android:exported="false" />
+        <activity
+            android:name=".pcr"
+            android:exported="false" />
+        <activity
+            android:name=".starterpage"
+            android:exported="false" />
+        <activity
+            android:name=".signuppage"
+            android:exported="false" />
+        <activity
+            android:name=".loginpage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
