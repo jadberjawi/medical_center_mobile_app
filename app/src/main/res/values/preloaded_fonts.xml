@@ -2,6 +2,7 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/abel</item>
+        <item>@font/aclonica</item>
         <item>@font/chivo</item>
         <item>@font/chivo_italic</item>
     </array>

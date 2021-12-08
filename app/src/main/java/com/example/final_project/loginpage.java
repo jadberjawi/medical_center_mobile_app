@@ -12,7 +12,7 @@ public class loginpage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_loginpage);
+        setContentView(R.layout.login);
         b = (Button) findViewById(R.id.button2);
     }
     public void starterpage(View view) {

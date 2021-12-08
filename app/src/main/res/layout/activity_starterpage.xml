@@ -4,34 +4,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/block2"
+    android:textAlignment="center"
     tools:context=".starterpage">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/annie_spratt_xtaopma6wae_un1splash__1_"
+        android:background="#663DBF"
         android:orientation="vertical"
         android:weightSum="11">
 
-        <RelativeLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2">
+            android:layout_weight="2"
+            android:background="@drawable/block2">
 
             <TextView
                 android:id="@+id/textView2"
-                android:layout_width="65dp"
-                android:layout_height="38dp"
-                android:layout_marginStart="172dp"
-                android:layout_marginTop="54dp"
-                android:layout_marginEnd="173dp"
-                android:layout_marginBottom="639dp"
+                android:layout_width="76dp"
+                android:layout_height="30dp"
                 android:fontFamily="@font/abel"
                 android:text="Tests"
                 android:textColor="#250D97"
                 android:textSize="28dp"
-                android:textStyle="bold" />
-        </RelativeLayout>
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.648" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="99dp"
+                android:layout_height="7dp"
+                android:background="#2D009E"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.864"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="100dp"
+                android:layout_height="53dp"
+                android:background="#BFE0E5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="100dp"
+                android:layout_height="53dp"
+                android:background="#B7E1E6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <GridLayout
             android:id="@+id/grid"
@@ -45,12 +90,12 @@
             android:rowCount="3">
 
             <androidx.cardview.widget.CardView
-                android:layout_margin="2dp"
-
                 android:layout_width="0dp"
+
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
+                android:layout_margin="2dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 app:cardCornerRadius="40dp"
@@ -65,24 +110,27 @@
 
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal"
                         android:onClick="pcr"
-                        android:src="@drawable/fusion_medical_animation_rnr8d3fnuny_unsplash"
+                        android:src="@drawable/coronavirus"
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <TextView
-                        android:layout_width="128dp"
-                        android:layout_height="48dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
                         android:layout_gravity="center_horizontal"
+                        android:background="@drawable/block2"
+                        android:backgroundTint="#A3474444"
                         android:onClick="pcr"
                         android:text="PCR"
                         android:textAlignment="center"
-                        android:textColor="#000000"
-                        android:textSize="13dp"
+                        android:textAllCaps="false"
+                        android:textColor="#F8F4F4"
                         android:textStyle="bold"
-                        android:translationY="-17dp" />
+                        android:translationY="-75dp"
+                        app:autoSizeTextType="uniform" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -92,136 +140,8 @@
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                app:cardCornerRadius="40dp"
-                app:cardElevation="8dp"
                 android:layout_margin="2dp"
-                >
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:onClick="fc"
-                        android:src="@drawable/online_marketing_higeoqjs_ie_unsplash"
-                        tools:ignore="SpeakableTextPresentCheck" />
-
-                    <TextView
-                        android:layout_width="128dp"
-                        android:layout_height="48dp"
-                        android:layout_gravity="center_horizontal"
-                        android:onClick="fc"
-                        android:text="Full Checkup"
-                        android:textAlignment="center"
-                        android:textColor="#000000"
-                        android:textSize="13dp"
-                        android:textStyle="bold"
-                        android:translationY="-17dp" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
                 android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                app:cardCornerRadius="40dp"
-                app:cardElevation="8dp"
-                android:layout_margin="2dp"
->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
-
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:onClick="bt"
-                        android:src="@drawable/hush_naidoo_jade_photography_zp7ebyti3mu_unsplash"
-                        tools:ignore="SpeakableTextPresentCheck" />
-
-                    <TextView
-                        android:layout_width="128dp"
-                        android:layout_height="29dp"
-                        android:layout_gravity="center_horizontal"
-                        android:onClick="bt"
-                        android:text="blood type test"
-                        android:textAlignment="center"
-                        android:textColor="#000000"
-                        android:textSize="13dp"
-                        android:textStyle="bold"
-                        android:translationY="-17dp"
-                        tools:ignore="TouchTargetSizeCheck" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                app:cardCornerRadius="40dp"
-                app:cardElevation="8dp"
-                android:layout_margin="2dp"
-                >
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
-
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:onClick="lipid"
-                        android:src="@drawable/diabetesmagazijn_nl_z03q6gakqkm_unsplash"
-                        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-
-                    <TextView
-                        android:layout_width="128dp"
-                        android:layout_height="48dp"
-                        android:layout_gravity="center_horizontal"
-                        android:onClick="lipid"
-                        android:text="Lipid Panel"
-                        android:textAlignment="center"
-                        android:textColor="#000000"
-                        android:textSize="13dp"
-                        android:textStyle="bold"
-                        android:translationY="-17dp" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_marginLeft="16dp"
-                android:layout_margin="2dp"
                 android:layout_marginRight="16dp"
                 app:cardCornerRadius="40dp"
                 app:cardElevation="8dp">
@@ -235,24 +155,27 @@
 
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal"
-                        android:onClick="mammo"
-                        android:src="@drawable/national_cancer_institute_xgktru6xk2o_unsplash"
+                        android:onClick="bt"
+                        android:src="@drawable/blood_test"
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <TextView
-                        android:layout_width="128dp"
-                        android:layout_height="48dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
                         android:layout_gravity="center_horizontal"
-                        android:onClick="mammo"
-                        android:text="Mammography"
+                        android:background="@drawable/block2"
+                        android:backgroundTint="#A3474444"
+                        android:onClick="bt"
+                        android:text="Blood Test"
                         android:textAlignment="center"
-                        android:textColor="#000000"
-                        android:textSize="13dp"
+                        android:textAllCaps="false"
+                        android:textColor="#F8F4F4"
                         android:textStyle="bold"
-                        android:translationY="-17dp" />
+                        android:translationY="-75dp"
+                        app:autoSizeTextType="uniform" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -262,12 +185,11 @@
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
+                android:layout_margin="2dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 app:cardCornerRadius="40dp"
-                app:cardElevation="8dp"
-                android:layout_margin="2dp"
-                >
+                app:cardElevation="8dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -278,29 +200,162 @@
 
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal"
-                        android:onClick="echo"
-                        android:src="@drawable/towfiqu_barbhuiya_qsbfowmopny_unsplash"
+                        android:onClick="mammo"
+                        android:src="@drawable/mammography"
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <TextView
-                        android:layout_width="128dp"
-                        android:layout_height="27dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/block2"
+                        android:backgroundTint="#A3474444"
+                        android:onClick="mammo"
+                        android:text="Mammography"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="#F8F4F4"
+                        android:textStyle="bold"
+                        android:translationY="-75dp"
+                        app:autoSizeTextType="uniform" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:onClick="fc"
+                        android:src="@drawable/testing"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/block2"
+                        android:backgroundTint="#A3474444"
+                        android:onClick="fc"
+                        android:text="Full Checkup"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="#F8F4F4"
+                        android:textStyle="bold"
+                        android:translationY="-75dp"
+                        app:autoSizeTextType="uniform" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:onClick="lipid"
+                        android:src="@drawable/blood_cell"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/block2"
+                        android:backgroundTint="#A3474444"
+                        android:onClick="lipid"
+                        android:text="Lipid Panel"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="#F8F4F4"
+                        android:textStyle="bold"
+                        android:translationY="-75dp"
+                        app:autoSizeTextType="uniform" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal"
                         android:onClick="echo"
+                        android:src="@drawable/ultrasonography"
+                        tools:ignore="SpeakableTextPresentCheck" />
 
-                        android:rotation="0"
-                        android:rotationX="0"
-                        android:rotationY="0"
-                        android:text="Echocardiography"
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/block2"
+                        android:backgroundTint="#A3474444"
+                        android:onClick="echo"
+                        android:text="Echography"
                         android:textAlignment="center"
-                        android:textColor="#000000"
-                        android:textSize="13dp"
+                        android:textAllCaps="false"
+                        android:textColor="#F8F4F4"
                         android:textStyle="bold"
-                        android:translationY="-17dp"
-                        tools:ignore="TouchTargetSizeCheck" />
+                        android:translationY="-75dp"
+                        app:autoSizeTextType="uniform" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -313,18 +368,13 @@
             android:layout_width="50dp"
             android:layout_height="48dp"
             android:onClick="userinfo"
-            android:translationX="180dp"
-            app:srcCompat="@drawable/user"
+            android:translationX="183dp"
+            android:translationY="17dp"
+            app:srcCompat="@drawable/user__2_"
             tools:ignore="SpeakableTextPresentCheck" />
 
 
     </LinearLayout>
-
-
-
-
-
-
 
 
 </RelativeLayout>
