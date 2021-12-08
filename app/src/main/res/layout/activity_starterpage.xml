@@ -363,13 +363,16 @@
 
         </GridLayout>
 
+
+
         <ImageView
             android:id="@+id/imageView10"
-            android:layout_width="50dp"
-            android:layout_height="48dp"
+
+            android:layout_width="80dp"
+            android:layout_height="60dp"
             android:onClick="userinfo"
-            android:translationX="183dp"
-            android:translationY="17dp"
+            android:translationX="167dp"
+            android:translationY="7dp"
             app:srcCompat="@drawable/user__2_"
             tools:ignore="SpeakableTextPresentCheck" />
 
@@ -378,3 +381,18 @@
 
 
 </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
