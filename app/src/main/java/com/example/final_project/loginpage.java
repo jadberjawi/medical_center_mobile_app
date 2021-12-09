@@ -34,7 +34,7 @@ public class loginpage extends AppCompatActivity {
     public void starterpage(View view) {
 
         DownloadName task = new DownloadName();
-        String link = "http://10.0.2.2:80/Medical_center/login.php?username="
+        String link = "http://192.168.0.103/Medical_center/login.php?username="
                 +usern.getText().toString()+"&pass="+pass.getText().toString();
 
 
