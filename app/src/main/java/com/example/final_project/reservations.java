@@ -42,12 +42,12 @@ public class reservations extends AppCompatActivity {
             "12:00 am-12,dec,2021","12:00 am-12,dec,2021","12:00 am-12,dec,2021","12:00 am-12,dec,2021"
     };
     // Define an integer array to hold the image recourse ids
-    int[] programImages = {R.drawable.hnet_com_image,R.drawable.hnet_com_image,R.drawable.hnet_com_image, R.drawable.hnet_com_image,
-            R.drawable.hnet_com_image__1_,R.drawable.hnet_com_image__1_,R.drawable.hnet_com_image__1_, R.drawable.hnet_com_image__1_,
+    int[] programImages = {R.drawable.hnet_com_image__1_,R.drawable.hnet_com_image__1_,R.drawable.hnet_com_image__1_, R.drawable.hnet_com_image__1_,
+            R.drawable.hnet_com_image,R.drawable.hnet_com_image,R.drawable.hnet_com_image, R.drawable.hnet_com_image,
+            R.drawable.hnet_com_image__3_,R.drawable.hnet_com_image__3_,R.drawable.hnet_com_image__3_, R.drawable.hnet_com_image__3_,
+            R.drawable.hnet_com_image__4_,R.drawable.hnet_com_image__4_,R.drawable.hnet_com_image__4_,R.drawable.hnet_com_image__4_,
             R.drawable.hnet_com_image__2_,R.drawable.hnet_com_image__2_,R.drawable.hnet_com_image__2_, R.drawable.hnet_com_image__2_,
-            R.drawable.testing,R.drawable.testing,R.drawable.testing,R.drawable.testing,
-            R.drawable.hnet_com_image3,R.drawable.hnet_com_image3,R.drawable.hnet_com_image3, R.drawable.hnet_com_image3,
-            R.drawable.hnet_com_imageecho, R.drawable.hnet_com_imageecho,R.drawable.hnet_com_imageecho,R.drawable.hnet_com_imageecho};
+            R.drawable.hnet_com_image__5_, R.drawable.hnet_com_image__5_,R.drawable.hnet_com_image__5_,R.drawable.hnet_com_image__5_};
 
 
     @Override
