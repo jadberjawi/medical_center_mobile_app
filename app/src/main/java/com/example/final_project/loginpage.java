@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -31,9 +32,13 @@ public class loginpage extends AppCompatActivity {
     }
 
     public void starterpage(View view) {
-        Intent i = new Intent(loginpage.this, starterpage.class);
-        startActivity(i);
+
         DownloadName task = new DownloadName();
+        String link = "http://10.0.2.2:80/Medical_center/login.php?username="
+                +usern.getText().toString()+"&pass="+pass.getText().toString();
+
+
+        task.execute(link);
 
     }
 
@@ -72,9 +77,15 @@ public class loginpage extends AppCompatActivity {
 
                 for(int i=0; i < jsonarray.length(); i++) {
                     JSONObject jsonobject = jsonarray.getJSONObject(i);
-                    String age    = jsonobject.getString("age");
-                    String firstname = jsonobject.getString("First_Name");
-                    t.setText(age+" "+firstname);
+                    String access    = jsonobject.getString("access");
+                    if(access.equalsIgnoreCase("YES")){
+                        Intent intent = new Intent(loginpage.this, starterpage.class);
+                        startActivity(intent);
+                    }
+                    else{
+                        Toast.makeText(loginpage.this,access.toString(), Toast.LENGTH_SHORT).show();
+                    }
+
 
                 }
             } catch (Exception e) {
