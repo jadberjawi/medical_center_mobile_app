@@ -73,9 +73,10 @@ public class ProgramAdapter extends ArrayAdapter<String> {
         singleItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(), "You clicked:"+ programName[position], Toast.LENGTH_SHORT).show();
-                //Intent openLinksIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(urls[position]));
-                //context.startActivity(openLinksIntent);
+//                Toast.makeText(getContext(), "You clicked:"+ programName[position], Toast.LENGTH_SHORT).show();
+                Intent intentt=new Intent(getContext(),userinfo.class);
+                intentt.putExtra("details", programName[position]+"\n"+programDescription[position]);
+                context.startActivity(intentt);
             }
         });
         return singleItem;

@@ -41,7 +41,7 @@ public class signuppage extends AppCompatActivity {
     public void starterpage(View view) {
 
         Signingup task = new Signingup();
-        String link = "http://192.168.0.102/Medical_center/signupApp.php?username="
+        String link = "http://192.168.0.106/Medical_center/signupApp.php?username="
                 + usern.getText().toString() + "&pass=" + pass.getText().toString() + "&phone="
                 + Integer.parseInt(phone.getText().toString()) + "&city="
                 + city.getText().toString() + "&address=" + address.getText().toString()
