@@ -65,7 +65,7 @@ String str;
         str = intent.getStringExtra("logged_user");
 
         DownloadName task = new DownloadName();
-        String link = "http://192.168.0.106/Medical_center/Reservations.php";
+        String link = "http://192.168.43.183/Medical_center/Reservations.php";
 
 
         task.execute(link);

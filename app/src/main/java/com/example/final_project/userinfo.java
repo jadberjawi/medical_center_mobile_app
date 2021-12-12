@@ -38,7 +38,7 @@ public class userinfo extends AppCompatActivity {
         reserv.setText(str);
 
         getinfo task = new getinfo();
-        String link = "http://192.168.0.106/Medical_center/userinfo.php?username="+str1;
+        String link = "http://192.168.43.183/Medical_center/userinfo.php?username="+str1;
         task.execute(link);
 
     }
