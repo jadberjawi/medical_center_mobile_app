@@ -42,7 +42,9 @@ public class userinfo extends AppCompatActivity {
         task.execute(link);
 
     }
-
+public void remove(View v){
+        reserv.setText("Empty Reservation");
+}
     public class getinfo extends AsyncTask<String, Void, String> {
 
         protected String doInBackground(String... urls) {

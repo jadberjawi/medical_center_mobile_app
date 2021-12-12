@@ -35,7 +35,6 @@ public class signuppage extends AppCompatActivity {
         address = (EditText) findViewById(R.id.editTextTextPersonName3);
         floor = (EditText) findViewById(R.id.editTextTextPersonName4);
 
-
     }
 
     public void starterpage(View view) {
@@ -92,6 +91,8 @@ public class signuppage extends AppCompatActivity {
 
                     if (access.equalsIgnoreCase("YES")) {
                         Intent intent = new Intent(signuppage.this, starterpage.class);
+                        intent.putExtra("logged_user", usern.getText().toString());
+
                         startActivity(intent);
                     } else {
                         Toast.makeText(signuppage.this, access.toString(), Toast.LENGTH_SHORT).show();
