@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#663DBF"
+        android:background="#8700FF"
         android:orientation="vertical"
         android:weightSum="11">
 
@@ -54,7 +54,7 @@
                 android:id="@+id/imageButton6"
                 android:layout_width="100dp"
                 android:layout_height="53dp"
-                android:background="#BFE0E5"
+                android:background="#C3EDF0"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
@@ -67,7 +67,7 @@
                 android:id="@+id/imageButton7"
                 android:layout_width="100dp"
                 android:layout_height="53dp"
-                android:background="#B7E1E6"
+                android:background="#C3EDF0"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -362,7 +362,6 @@
 
 
         </GridLayout>
-
 
 
         <ImageView

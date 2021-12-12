@@ -24,17 +24,6 @@ public class ProgramAdapter extends ArrayAdapter<String> {
         this.programDescription = programDescription;
     }
 
-    /*
-    Additional code
-    public ProgramAdapter(Context context, String[] programName, int[] images, String[] programDescription, String[] urls) {
-        super(context, R.layout.single_item, R.id.textView1, programName);
-        this.context = context;
-        this.images = images;
-        this.programName = programName;
-        this.programDescription = programDescription;
-        this.urls = urls;
-    }
-     */
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
@@ -75,7 +64,8 @@ public class ProgramAdapter extends ArrayAdapter<String> {
             public void onClick(View view) {
 //                Toast.makeText(getContext(), "You clicked:"+ programName[position], Toast.LENGTH_SHORT).show();
                 Intent intentt=new Intent(getContext(),userinfo.class);
-                intentt.putExtra("details", programName[position]+"\n"+programDescription[position]);
+                intentt.putExtra("details", "test type: "+programName[position]+"\ntiming: "+programDescription[position]);
+
                 context.startActivity(intentt);
             }
         });

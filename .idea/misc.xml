@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.27037037037037037" />
         <entry key="app/src/main/res/drawable/block.xml" value="0.3260416666666667" />
         <entry key="app/src/main/res/drawable/block2.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable/block3.xml" value="0.321025641025641" />
         <entry key="app/src/main/res/drawable/getstarted.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.27037037037037037" />
+        <entry key="app/src/main/res/drawable/profile_bk.xml" value="0.321025641025641" />
         <entry key="app/src/main/res/drawable/testsimg.xml" value="0.3260416666666667" />
         <entry key="app/src/main/res/layout/activity_bt.xml" value="0.28396739130434784" />
         <entry key="app/src/main/res/layout/activity_echo.xml" value="0.3465593760413274" />
@@ -17,8 +21,8 @@
         <entry key="app/src/main/res/layout/activity_pcr.xml" value="0.28396739130434784" />
         <entry key="app/src/main/res/layout/activity_reservations.xml" value="0.26721014492753625" />
         <entry key="app/src/main/res/layout/activity_signuppage.xml" value="0.28396739130434784" />
-        <entry key="app/src/main/res/layout/activity_starterpage.xml" value="0.2955928057837526" />
-        <entry key="app/src/main/res/layout/activity_userinfo.xml" value="0.284030661777935" />
+        <entry key="app/src/main/res/layout/activity_starterpage.xml" value="0.24739266196439275" />
+        <entry key="app/src/main/res/layout/activity_userinfo.xml" value="0.33433465829251585" />
         <entry key="app/src/main/res/layout/login.xml" value="0.26257502070954036" />
         <entry key="app/src/main/res/layout/single_item.xml" value="0.15070921985815602" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3260416666666667" />
