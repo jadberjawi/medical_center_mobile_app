@@ -38,11 +38,11 @@
         android:backgroundTint="#B51E88E5"
         android:text="Lipid Panel"
         android:textColor="#F6F6F6"
-        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.625"
+        app:layout_constraintVertical_bias="0.309"
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView

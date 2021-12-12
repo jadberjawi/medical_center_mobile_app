@@ -37,11 +37,12 @@
         android:backgroundTint="#B51E88E5"
         android:text="Full CheckUp"
         android:textColor="#F3EEEE"
-        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.625"
+        app:layout_constraintVertical_bias="0.27"
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
