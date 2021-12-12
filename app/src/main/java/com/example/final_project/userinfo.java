@@ -31,12 +31,14 @@ public class userinfo extends AppCompatActivity {
         f=(TextView)findViewById(R.id.textView22) ;
         reserv=(TextView)findViewById(R.id.reserv) ;
 
-//        Intent intent = getIntent();
-//        String str = intent.getStringExtra("datails");
-//        reserv.setText(str);
+        Intent intent = getIntent();
+        String str = intent.getStringExtra("details");
+        String str1 = intent.getStringExtra("logged_user");
+
+        reserv.setText(str);
 
         getinfo task = new getinfo();
-        String link = "http://192.168.0.106/Medical_center/userinfo.php";
+        String link = "http://192.168.0.106/Medical_center/userinfo.php?username="+str1;
         task.execute(link);
 
     }

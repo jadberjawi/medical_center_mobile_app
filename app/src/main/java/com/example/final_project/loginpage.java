@@ -38,6 +38,7 @@ public class loginpage extends AppCompatActivity {
                 +usern.getText().toString()+"&pass="+pass.getText().toString();
 
 
+
         task.execute(link);
 
     }
@@ -80,6 +81,8 @@ public class loginpage extends AppCompatActivity {
                     String access    = jsonobject.getString("access");
                     if(access.equalsIgnoreCase("YES")){
                         Intent intent = new Intent(loginpage.this, starterpage.class);
+                        intent.putExtra("logged_user", usern.getText().toString());
+
                         startActivity(intent);
                     }
                     else{
