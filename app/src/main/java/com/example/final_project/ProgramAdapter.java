@@ -14,14 +14,16 @@ public class ProgramAdapter extends ArrayAdapter<String> {
     int[] images;
     String[] programName;
     String[] programDescription;
+    String user;
     //String[] urls;
 
-    public ProgramAdapter(Context context, String[] programName, int[] images, String[] programDescription) {
+    public ProgramAdapter(Context context, String[] programName, int[] images, String[] programDescription,String user) {
         super(context, R.layout.single_item, R.id.textView1, programName);
         this.context = context;
         this.images = images;
         this.programName = programName;
         this.programDescription = programDescription;
+        this.user=user;
     }
 
 
@@ -66,7 +68,7 @@ public class ProgramAdapter extends ArrayAdapter<String> {
                 Intent intentt=new Intent(getContext(),userinfo.class);
 
                 intentt.putExtra("details", programName[position]+"\n"+programDescription[position]);
-
+                intentt.putExtra("logged_user",user);
                 context.startActivity(intentt);
             }
         });

@@ -25,7 +25,7 @@ public class reservations extends AppCompatActivity {
     Link for download: https://devicons.github.io/devicon/
     License: https://github.com/devicons/devicon/blob/master/LICENSE
      */
-
+String str;
     // Create a ListView object reference
     ListView lvProgram;
     // Next, prepare your data set. Create two string arrays for program name and program description respectively.
@@ -61,6 +61,8 @@ public class reservations extends AppCompatActivity {
         // Get the handle for ListView
         lvProgram = findViewById(R.id.lvProgram);
 
+        Intent intent = getIntent();
+        str = intent.getStringExtra("logged_user");
 
         DownloadName task = new DownloadName();
         String link = "http://192.168.0.106/Medical_center/Reservations.php";
@@ -118,7 +120,7 @@ public class DownloadName extends AsyncTask<String, Void, String> {
 
             }
             // Specify an adapter and pass context along with all the arrays in constructor
-            ProgramAdapter programAdapter = new ProgramAdapter(reservations.this, programName, programImages, programDescription);
+            ProgramAdapter programAdapter = new ProgramAdapter(reservations.this, programName, programImages, programDescription,str);
             //ProgramAdapter programAdapter = new ProgramAdapter(this, programName, programImages, programDescription, urls);
 
             // Set the adapter with the ListView
