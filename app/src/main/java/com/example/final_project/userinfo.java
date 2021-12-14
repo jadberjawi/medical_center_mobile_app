@@ -103,7 +103,8 @@ public void logout(View v){
     logoutt task = new logoutt();
     String link = "http://192.168.0.106/Medical_center/logout.php";
     task.execute(link);
-
+    Intent i=new Intent(userinfo.this,MainActivity.class);
+    startActivity(i);
 
 }
     public class logoutt extends AsyncTask<String, Void, String> {

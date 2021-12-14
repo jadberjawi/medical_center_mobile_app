@@ -78,6 +78,8 @@ String str;
 
 
 
+
+
 public class DownloadName extends AsyncTask<String, Void, String> {
 
     protected String doInBackground(String... urls) {
